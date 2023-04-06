@@ -77,4 +77,6 @@ with tf.device('/device:GPU:0'):
     Y_array = np.reshape(Y_array, (Y_array.shape[0], Y_array.shape[1], Y_array.shape[2], 1))
 
 
-
+# Save our training arrays to the data folder
+np.save("./data/Y_array.npy", Y_array)
+np.save("./data/X_array.npy", X_array)
